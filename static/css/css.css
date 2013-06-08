@@ -1,0 +1,55 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+#header-container {
+    text-align: center;
+    margin:20px 0 0;
+}
+
+#content-container {
+    text-align: center;
+    margin:10px;
+}
+
+#other-sites {
+    width:500px;
+    margin:0 auto;
+}
+
+#other-sites > div {
+    background-repeat:no-repeat;
+    background-position:5px 0;
+    margin:3px 3px;
+    display:inline-block;
+}
+
+#other-sites > div > a {
+    display:block;
+    height:52px;
+    width:175px;
+    margin:6px;
+    border:solid 2px #fff;
+    padding:5px 0 5px 50px;
+    text-decoration:none;
+    color:#fff;
+    text-align:center;
+}
+
+#other-sites > div > a > span {
+    display:block;
+}
+
+#other-sites > div > a > .site {
+    font-size:18px;
+    font-weight:bold;
+}
+
+#bitbucket { background: url('../img/bitbucket-64.png') #205081; }
+#github { background: url('../img/github-64.png') #4183C4; }
+#linkedin { background: url('../img/linkedin-64.png') #007FB1; }
+#gmail { background: url('../img/gmail-64.png') #DD4B39; }
