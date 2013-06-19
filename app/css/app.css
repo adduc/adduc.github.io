@@ -1,4 +1,3 @@
-
 * {
     margin:0;
     padding:0;
@@ -6,32 +5,40 @@
     font-family:sans-serif;
 }
 
-#header-container {
-    text-align: center;
-    margin:20px 0 0;
-}
-
-#content-container {
-    text-align: center;
-    margin:10px;
-}
-
-#other-sites {
-    width:500px;
+body {
+    max-width:1200px;
     margin:0 auto;
 }
 
-#other-sites > div {
-    background-repeat:no-repeat;
-    background-position:5px 0;
-    margin:3px 3px;
-    display:inline-block;
+#header-background {
+    position:absolute;
+    width:100%;
+    left:0;
+    height:56px;
+    background: #eee;
+    z-index:-1;
 }
 
-#other-sites > div > a {
+#header-container {
+    height:56px;
+    margin-bottom:20px;
+}
+
+#header-container h1 {
+    font-size:42px;
+    line-height:56px;
+}
+
+#other-sites > div > div {
+    background-position:5px 1px;
+    background-repeat:no-repeat;
+    padding:1px;
+    margin-bottom:20px;
+}
+
+#other-sites > div > div > a {
     display:block;
     height:52px;
-    width:175px;
     margin:6px;
     border:solid 2px #fff;
     padding:5px 0 5px 50px;
@@ -40,11 +47,11 @@
     text-align:center;
 }
 
-#other-sites > div > a > span {
+#other-sites > div > div > a > span {
     display:block;
 }
 
-#other-sites > div > a > .site {
+#other-sites > div > div > a > .site {
     font-size:18px;
     font-weight:bold;
 }

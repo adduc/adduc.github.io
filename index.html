@@ -3,40 +3,50 @@
     <head>
         <title>Adduc (John Long)</title>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-        <link rel="stylesheet" href="app/css/app.css" type="text/css">
+        <link rel="stylesheet" href="/app/css/app.css" type="text/css">
+        <link rel="stylesheet" href="/app/css/unsemantic-grid-responsive.css" type="text/css">
+        <script src="app/js/app.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="main-container">
-            <div id="header-container">
+            <div id="header-background"></div>
+            <div id="header-container" class="grid-100">
                 <h1>Adduc</h1>
             </div>
-            <div id="content-container">
+            <div id="content-container" class="grid-70 push-30 mobile-grid-100">
                 <div id="other-sites">
-                    <div id="bitbucket">
-                        <a href="https://bitbucket.org/Adduc">
-                            <span class="site">Bitbucket</span>
-                            <span class="user">Adduc</span>
-                        </a>
-                    </div>
-                    <div id="linkedin">
-                        <a href="http://www.linkedin.com/profile/view?id=27739576">
-                            <span class="site">LinkedIn</span>
-                            <span class="user">John S Long</span>
-                        </a>
-                    </div>
-                    <div id="github">
-                        <a href="https://github.com/Adduc">
-                            <span class="site">Github</span>
-                            <span class="user">Adduc</span>
-                        </a>
-                    </div>
-                    <div id="gmail">
-                        <a href="mail:adduc.com@88k.us">
-                            <span class="site">Email</span>
-                            <span class="user">a&lt;at&gt;88k.us</span>
-                        </a>
+                    <div class="grid-33 mobile-grid-50">
+                        <div id="bitbucket">
+                            <a href="https://bitbucket.org/Adduc">
+                                <span class="site">Bitbucket</span>
+                                <span class="user">Adduc</span>
+                            </a>
+                        </div>
+                    </div><div class="grid-33 mobile-grid-50">
+                        <div id="linkedin">
+                            <a href="http://www.linkedin.com/profile/view?id=27739576">
+                                <span class="site">LinkedIn</span>
+                                <span class="user">John S Long</span>
+                            </a>
+                        </div>
+                    </div><div class="grid-33 mobile-grid-50">
+                        <div id="github">
+                            <a href="https://github.com/Adduc">
+                                <span class="site">Github</span>
+                                <span class="user">Adduc</span>
+                            </a>
+                        </div>
+                    </div><div class="grid-33 mobile-grid-50">
+                        <div id="gmail">
+                            <a href="mail:adduc.com@88k.us">
+                                <span class="site">Email</span>
+                                <span class="user">a&lt;at&gt;88k.us</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div><div id="navigation-container" class="grid-30 pull-70 hide-on-mobile">
+                <h1>Navigation?</h1>
             </div>
         </div>
     </body>
