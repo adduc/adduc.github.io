@@ -5,27 +5,82 @@
     font-family:sans-serif;
 }
 
+html:before {
+    background:url('../img/tweed.png');
+    height:100%;
+    width:100%;
+    display:block;
+    position:fixed;
+    content:' ';
+    z-index:-2;
+    opacity:.25;
+}
+
 body {
     max-width:1200px;
     margin:0 auto;
 }
 
-#header-background {
+#header-background,
+#header-background:before {
     position:absolute;
     width:100%;
     left:0;
-    height:56px;
-    background: #eee;
+    height:112px;
+    background: url('../img/tweed.png');
     z-index:-1;
 }
 
 #header-container {
-    height:56px;
+    height:112px;
     margin-bottom:20px;
 }
 
+#header-background:before {
+    z-index:1;
+    content:' ';
+    display:block;
+
+    background: rgba(114,2,26,1);
+    background: -moz-linear-gradient(left, rgba(114,2,26,1) 0%, rgba(109,0,25,0.2) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(114,2,26,1)), color-stop(100%,rgba(109,0,25,0.2)));
+    background: -webkit-linear-gradient(left, rgba(114,2,26,1) 0%,rgba(109,0,25,0.2) 100%);
+    background: -o-linear-gradient(left, rgba(114,2,26,1) 0%,rgba(109,0,25,0.2) 100%);
+    background: -ms-linear-gradient(left, rgba(114,2,26,1) 0%,rgba(109,0,25,0.2) 100%);
+    background: linear-gradient(to right, rgba(114,2,26,1) 0%,rgba(109,0,25,0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72021a', endColorstr='#336d0019',GradientType=1 );
+}
+
 #header-container h1 {
+    padding:0 10px;
     font-size:42px;
+    line-height:112px;
+    color: #efefef;
+    font-family: 'Marmelad', sans-serif;
+}
+
+#navigation-container:after {
+    width:2px;
+    background: #2d2d2d;
+    opacity:.2;
+    content:' ';
+    display:block;
+    height:100%;
+    top:0;
+    position:fixed;
+    left:30.5%;
+    left:calc(30% + 10px);
+    z-index: -2;
+}
+
+#navigation-container a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    vertical-align:top;
+    display:block;
     line-height:56px;
 }
 
